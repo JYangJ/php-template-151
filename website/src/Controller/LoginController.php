@@ -1,8 +1,8 @@
 <?php
 
-namespace ihrname\Controller;
+namespace jyangj\Controller;
 
-use ihrname\SimpleTemplateEngine;
+use jyangj\SimpleTemplateEngine;
 
 class LoginController
 {

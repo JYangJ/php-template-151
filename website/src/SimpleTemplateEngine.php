@@ -1,6 +1,6 @@
 <?php
 
-namespace ihrname;
+namespace jyangj;
 
 /**
  * Simple Template-Engine which provides arguments into a template,
