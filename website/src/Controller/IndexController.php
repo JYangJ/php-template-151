@@ -1,8 +1,8 @@
 <?php
 
-namespace ihrname\Controller;
+namespace jyangj\Controller;
 
-use ihrname\SimpleTemplateEngine;
+use jyangj\SimpleTemplateEngine;
 
 class IndexController 
 {
@@ -20,10 +20,16 @@ class IndexController
   }
 
   public function homepage() {
-    echo $this->template->render("index.html.php");
+  	echo $this->template->render("index.html.php");    
   }
-
+  
   public function greet($name) {
   	echo $this->template->render("hello.html.php", ["name" => $name]);
+  }
+  public function gallery(){
+  	echo $this->template->render("gallery.html.php");
+  }
+  public function gallery2(){
+  	echo $this->template->render("gallery2.html.php");
   }
 }
