@@ -22,6 +22,13 @@ class Factory
 				$this->getLoginService()
 				);
 	}
+	public function getGalleryController()
+	{
+		return new Controller\GalleryController(
+			$this->getTemplateEngine()		
+		);
+		
+	}
 
 	public function getTemplateEngine()
 	{

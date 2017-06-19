@@ -10,9 +10,12 @@
 <div id="header"><h1><a href="/">Junhyeok's Gallery</a></h1></div>
   <div id="wrapper">
     <div id="content">
-      <p id="title"><strong>Welcome</strong></p>
-      <p>Hello! This is Junhyeok's page. You can see some of pictures I upload.</p>
-      <p>You also can upload your own picture!</p>
+      <p id="title"><strong>Your photos</strong></p>
+      <?php 
+      	foreach($images as $image) { 
+      		echo '<img src="/upload/' . $image . '" />';
+      	}
+      ?>
     </div>
   </div>	 
   <div id="navigation">
@@ -22,16 +25,20 @@
       <li><a href="/gallery2">Gallery - Food</a></li>
       <li><a href="/upload">Gallery - Upload file</a></li>
     </ul>
+    <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <input type="submit" />
+    </form>
   </div>
   <div id="extra">
-    <p><strong>Help</strong></p>
+        <p><strong>Help</strong></p>
     <p>If you have any question, please contact below.<br/><br/>
     e-mail: jnh03151@gmail.com
     phone: +41 76 280 4468</p>
-  </div>
+    </div>
   <div id="footer">
-    <?php echo "Hello " . $_SESSION["email"]; ?>
-    <form action="/logout" Method="post">
+ <?php echo "Hello " . $_SESSION["email"]; ?>
+  <form action="/logout" Method="post">
         <input type="submit" value="logout"></input>
     </form>
   </div>

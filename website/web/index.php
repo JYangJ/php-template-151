@@ -34,6 +34,13 @@ switch($_SERVER["REQUEST_URI"]) {
 	case "/gallery2":
 		$factory->getIndexController()->gallery2();
 		break;
+	case "/upload":
+		if($_SERVER["REQUEST_METHOD"] == "GET") {
+			$factory->getGalleryController()->showUpload();
+		} else {
+			$factory->getGalleryController()->upload();
+		}
+		break;
 	case "/login":
 		$ctr = $factory->getLoginController();
 		if($_SERVER["REQUEST_METHOD"] == "GET") {

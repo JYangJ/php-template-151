@@ -22,12 +22,15 @@
     <ul>
       <li><a href="/gallery">Gallery - Bicycle</a></li>
       <li><a href="/gallery2">Gallery - Food</a></li>
+      <li><a href="/upload">Gallery - Upload file</a></li>      
     </ul>
   </div>
   <div id="extra">
-    <p><strong>More stuff here.</strong></p>
-    <p>sit malesuada lacus pellus parturpiscing. Pellenterdumat maecenatoque cras a magna nibh et quis diam ames et. Laoremvolutpat ac dolor eget eget temper lacus vestibus velit lacus venean. Magnaipsum tellus morbi leo aliquat nulla convallis pellentesque.</p>
-  </div>
+    <p><strong>Help</strong></p>
+    <p>If you have any question, please contact below.<br/><br/>
+    e-mail: jnh03151@gmail.com
+    phone: +41 76 280 4468</p>
+    </div>
   <div id="footer">
     <?php echo "Hello " . $_SESSION["email"]; ?>
   <form action="/logout" Method="post">
